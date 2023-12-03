@@ -5,13 +5,7 @@ spring:
     version: "@project.version@"
   profiles:
     active: "@spring.profiles.active@"
-  datasource:
-    driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/admin
-    username: postgres
-    password: root
-  jpa:
-    show-sql: true
-    properties:
-      hibernate:
-        format_sql: true
+
+files:
+  dataFiles: Material
+  coordFiles: coor

@@ -12,17 +12,21 @@ import java.util.List;
 /**
  * Метод для работы с файлами (считывания, записи)
  */
-public class FileService {
+public class FileUtils {
 
-    public List<Double> importDataMas(String file) throws FileNotFoundException {
+    public static List<Double> importDataMas(String file) {
         List<Double> values = new ArrayList<>();
-        try (BufferedReader br = new BufferedReader(new FileReader(file))) {
+        try {
+            BufferedReader br = new BufferedReader(new FileReader(file));
             String line;
             while ((line = br.readLine()) != null) {
                 values.add(Double.valueOf(line));
             }
             return values;
-        } catch (IOException e) {
+        } catch (FileNotFoundException e) {
+            throw new FilesException(String.format("Файл %s не найден", file));
+        }
+        catch (IOException e) {
             throw new FilesException("Ошибка чтения файлов");
         }
     }
