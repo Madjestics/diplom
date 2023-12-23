@@ -3,8 +3,8 @@ spring:
     name: "@project.name@"
     description: "@project.description@"
     version: "@project.version@"
-  profiles:
-    active: "@spring.profiles.active@"
+
+server.port: @server.port@
 
 files:
   dataFiles: Material

@@ -1,7 +1,7 @@
 package diplom.data.exceptions;
 
 /**
- * Исключение вызывается при ошибки во время работы с файлами
+ * Исключение вызывается при ошибке во время работы с файлами
  */
 public class FilesException extends BaseException{
 
