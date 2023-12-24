@@ -14,4 +14,5 @@ import org.springframework.stereotype.Component;
 public class FileProperties {
     private String dataFiles;
     private String coordFiles;
+    private String materials;
 }

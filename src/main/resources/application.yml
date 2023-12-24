@@ -9,3 +9,4 @@ server.port: @server.port@
 files:
   dataFiles: Material
   coordFiles: coor
+  materials: Materials.txt
