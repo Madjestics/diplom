@@ -15,4 +15,5 @@ public class FileProperties {
     private String dataFiles;
     private String coordFiles;
     private String materials;
+    private String parameters;
 }

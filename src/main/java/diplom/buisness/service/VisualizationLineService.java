@@ -1,5 +1,7 @@
-package diplom.buisness;
+package diplom.buisness.service;
 
+import diplom.buisness.utils.ApproximationMNKUtils;
+import diplom.buisness.utils.FileUtils;
 import diplom.data.dto.LineDataArray;
 import diplom.data.dto.FileProperties;
 import diplom.data.dto.IndexesLineData;

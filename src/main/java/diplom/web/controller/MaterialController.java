@@ -1,6 +1,6 @@
 package diplom.web.controller;
 
-import diplom.buisness.MaterialsService;
+import diplom.buisness.service.MaterialsService;
 import diplom.data.dto.Material;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;

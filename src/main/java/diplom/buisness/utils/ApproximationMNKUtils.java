@@ -1,4 +1,4 @@
-package diplom.buisness;
+package diplom.buisness.utils;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -63,10 +63,10 @@ public class ApproximationMNKUtils {
 
     private static List<Double> findFunc(List<Double> masResh, List<Double> masX) {
         List<Double> funcMas = new ArrayList<>();
-        for (int j=0; j<masX.size(); j++) {
+        for (Double x : masX) {
             double funcValue = 0;
-            for (int i=0; i<masResh.size(); i++) {
-                funcValue += masResh.get(i)*Math.pow(masX.get(j), i);
+            for (int i = 0; i < masResh.size(); i++) {
+                funcValue += masResh.get(i) * Math.pow(x, i);
             }
             funcMas.add(funcValue);
         }

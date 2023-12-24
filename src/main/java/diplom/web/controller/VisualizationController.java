@@ -1,7 +1,7 @@
 package diplom.web.controller;
 
-import diplom.buisness.VisualizationElementService;
-import diplom.buisness.VisualizationLineService;
+import diplom.buisness.service.VisualizationElementService;
+import diplom.buisness.service.VisualizationLineService;
 import diplom.data.dto.*;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;

@@ -1,4 +1,4 @@
-package diplom.buisness;
+package diplom.buisness.utils;
 
 import diplom.data.dto.Material;
 import diplom.data.exceptions.FilesException;
@@ -53,6 +53,21 @@ public class FileUtils {
                 materials.add(material);
             }
             return materials;
+        } catch (FileNotFoundException e) {
+            throw new FilesException(String.format("Файл %s не найден", file));
+        }
+        catch (IOException e) {
+            throw new FilesException("Ошибка чтения файлов");
+        }
+    }
+
+    public static void writeParametersToFile(String file, List<Double> parameters) {
+        try(FileWriter writer = new FileWriter(file, true)) {
+            for (Double parameter: parameters) {
+                writer.write(parameter.toString());
+                writer.write(" ");
+            }
+            writer.write("\n");
         } catch (FileNotFoundException e) {
             throw new FilesException(String.format("Файл %s не найден", file));
         }

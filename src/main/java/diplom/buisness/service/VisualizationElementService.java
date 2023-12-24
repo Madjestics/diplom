@@ -1,5 +1,6 @@
-package diplom.buisness;
+package diplom.buisness.service;
 
+import diplom.buisness.utils.FileUtils;
 import diplom.data.dto.*;
 import diplom.data.exceptions.FilesException;
 import diplom.data.exceptions.WrongIndexException;

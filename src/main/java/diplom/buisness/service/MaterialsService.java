@@ -1,5 +1,6 @@
-package diplom.buisness;
+package diplom.buisness.service;
 
+import diplom.buisness.utils.FileUtils;
 import diplom.data.dto.FileProperties;
 import diplom.data.dto.Material;
 import diplom.data.exceptions.WrongParameterException;
